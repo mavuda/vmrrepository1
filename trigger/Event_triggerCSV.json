@@ -1,0 +1,24 @@
+{
+	"name": "Event_triggerCSV",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "AzurestorageBlob2Blob",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/vmrstorageaccount/blobs/Storage_SOURCE",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/93dbc954-90a1-459b-bc12-a781ae24970c/resourceGroups/vmrresourcegroup/providers/Microsoft.Storage/storageAccounts/vmrstorageaccount",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

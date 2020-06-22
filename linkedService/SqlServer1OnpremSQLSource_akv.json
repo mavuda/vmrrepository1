@@ -1,0 +1,22 @@
+{
+	"name": "SqlServer1OnpremSQLSource_akv",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "Azure_Key_Vault2",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "OnpremSQLakvauth"
+			}
+		},
+		"connectVia": {
+			"referenceName": "IntegrationRuntimeSharedSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

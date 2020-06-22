@@ -1,0 +1,122 @@
+{
+	"name": "SqlServerTable11OnPrem_Table11",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1OnpremSQLSource_akv",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "SubscriptionGuid",
+				"type": "varchar"
+			},
+			{
+				"name": "ResourceGroup",
+				"type": "varchar"
+			},
+			{
+				"name": "ResourceLocation",
+				"type": "varchar"
+			},
+			{
+				"name": "UsageDateTime",
+				"type": "date"
+			},
+			{
+				"name": "MeterCategory",
+				"type": "varchar"
+			},
+			{
+				"name": "MeterSubcategory",
+				"type": "varchar"
+			},
+			{
+				"name": "MeterId",
+				"type": "varchar"
+			},
+			{
+				"name": "MeterName",
+				"type": "varchar"
+			},
+			{
+				"name": "MeterRegion",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "UsageQuantity",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "ResourceRate",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "PreTaxCost",
+				"type": "decimal",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ConsumedService",
+				"type": "varchar"
+			},
+			{
+				"name": "ResourceType",
+				"type": "varchar"
+			},
+			{
+				"name": "InstanceId",
+				"type": "varchar"
+			},
+			{
+				"name": "Tags",
+				"type": "varchar"
+			},
+			{
+				"name": "OfferId",
+				"type": "varchar"
+			},
+			{
+				"name": "AdditionalInfo",
+				"type": "varchar"
+			},
+			{
+				"name": "ServiceInfo1",
+				"type": "varchar"
+			},
+			{
+				"name": "ServiceInfo2",
+				"type": "varchar"
+			},
+			{
+				"name": "ServiceName",
+				"type": "varchar"
+			},
+			{
+				"name": "ServiceTier",
+				"type": "varchar"
+			},
+			{
+				"name": "Currency",
+				"type": "varchar"
+			},
+			{
+				"name": "UnitOfMeasure",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Customers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

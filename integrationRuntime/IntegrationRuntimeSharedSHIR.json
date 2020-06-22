@@ -1,0 +1,12 @@
+{
+	"name": "IntegrationRuntimeSharedSHIR",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/93dbc954-90a1-459b-bc12-a781ae24970c/resourcegroups/vmrresourcegroup/providers/Microsoft.DataFactory/factories/vmradfV2/integrationruntimes/integrationRuntime1Self",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

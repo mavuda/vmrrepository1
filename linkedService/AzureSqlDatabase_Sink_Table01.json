@@ -1,0 +1,12 @@
+{
+	"name": "AzureSqlDatabase_Sink_Table01",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=vmrsqlserver.database.windows.net;initial catalog=vmrsqldatabase;user id=vmrsqlserveradmin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlZNUkFERlYwMl8zNzBmNmJhOS0wNmEzLTQxODQtODljYi00ODk0Mzk5ZDg3YWIiDQp9"
+		}
+	}
+}

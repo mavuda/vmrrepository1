@@ -1,0 +1,16 @@
+{
+	"name": "AzureSqlDatabase11Onprem2A_SQLDB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=vmrsqlserver.database.windows.net;initial catalog=vmrsqldatabase;user id=vmrsqlserveradmin",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1MmZjZTdmNC1jMDA1LTQ2MWMtYTdhNy1lNmNhMGYxMTc2NmYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IntegrationRuntimeSharedSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "SqlServer11OnPremSQLDB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=C1CSSMD27023\\SQLEXPRESSONPREM;initial catalog=vmrSQLonpremDB;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwYTY4ZTIwZC05OTg2LTQ2ODctYTQ4Ni04MjBjZDQ5MDIyOWEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IntegrationRuntimeSharedSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
