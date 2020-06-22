@@ -1,0 +1,23 @@
+{
+	"name": "DelimitedText1_Sink_AKV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1SinkAKV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "vmr_ADLS_Gen2_Sink",
+				"container": "vmradlsgen2storage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

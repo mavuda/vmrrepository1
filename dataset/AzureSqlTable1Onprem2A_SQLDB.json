@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlTable1Onprem2A_SQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase11Onprem2A_SQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Onprem2A_SQLDBtable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

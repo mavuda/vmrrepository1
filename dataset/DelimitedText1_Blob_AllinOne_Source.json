@@ -1,0 +1,24 @@
+{
+	"name": "DelimitedText1_Blob_AllinOne_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1Blob_Source_AllinOne",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "hi reach1.PNG",
+				"folderPath": "storageaccount_ALLINONE/Input_Source",
+				"container": "vmrstorageaccount"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

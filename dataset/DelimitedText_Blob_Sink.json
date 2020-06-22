@@ -1,0 +1,23 @@
+{
+	"name": "DelimitedText_Blob_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Blob_Sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Storage_SINK",
+				"container": "vmrstorageaccount"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

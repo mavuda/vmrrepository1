@@ -1,0 +1,23 @@
+{
+	"name": "DelimitedText1_Blob_AllinOne_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1Blob_Sink_AllinOne",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "storageaccount_ALLINONE/Output_Sink",
+				"container": "vmrstorageaccount"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

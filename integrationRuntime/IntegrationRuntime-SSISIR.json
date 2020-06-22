@@ -1,0 +1,27 @@
+{
+	"name": "IntegrationRuntime-SSISIR",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Southeast Asia",
+				"nodeSize": "Standard_D4_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 2
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "vmrsqlserver.database.windows.net",
+					"catalogAdminUserName": "vmrsqlserveradmin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}

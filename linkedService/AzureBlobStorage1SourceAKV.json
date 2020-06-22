@@ -1,0 +1,22 @@
+{
+	"name": "AzureBlobStorage1SourceAKV",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "Azure_Key_Vault2",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "vmrstoragevnetakv2"
+			}
+		},
+		"connectVia": {
+			"referenceName": "IntegrationRuntimeSharedSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlTable1AzureSink_akv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1AzureSQL_akv",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AzureUsage55"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

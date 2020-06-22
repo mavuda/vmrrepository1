@@ -1,0 +1,11 @@
+{
+	"name": "Azure_Key_Vault2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://vmrkeyvaultAKV.vault.azure.net/"
+		}
+	}
+}
