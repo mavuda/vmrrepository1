@@ -1,0 +1,31 @@
+{
+	"name": "SourceDataset_vps",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1SourceAKV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "vmr ADLS Gen2Source File.txt",
+				"folderPath": "vmr_ADLS_Gen2_Sink",
+				"container": "vmradlsgen2storage"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
