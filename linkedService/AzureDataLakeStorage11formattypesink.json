@@ -1,0 +1,11 @@
+{
+	"name": "AzureDataLakeStorage11formattypesink",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://vmrstoragevnet.dfs.core.windows.net"
+		}
+	}
+}

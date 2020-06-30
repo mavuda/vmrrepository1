@@ -1,0 +1,19 @@
+{
+	"name": "Binary111formattypesink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage111formattypesink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "vmr_ADLS_Gen2_ALLINONE",
+				"fileSystem": "vmradlsgen2storage"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
